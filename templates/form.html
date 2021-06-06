@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Signup Complete{% endblock %}
+{% block content %}
+  <div class = "container">
+    <h1>Thankyou for subscribing</h1><br>
+    <small>Please Confirm Your Information</small><br><br>
+   <ul>
+   {% for subscriber in subscribers %}
+    <li>{{ subscriber }}</li>
+
+    {% endfor %}
+  </ul>
+  </div>
+ 
+
+{% endblock %}  
